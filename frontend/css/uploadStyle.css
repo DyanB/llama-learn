@@ -1,0 +1,100 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 22 32'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='Artboard-5' fill='%23c8bf90' fill-opacity='0.3' fill-rule='nonzero'%3E%3Cpath d='M6 18h12V6H6v12zM4 4h16v16H4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.upload-heading {
+    background-color: #000;
+    color: #bfb05e;
+    padding: 10px;
+    border: 1px solid #bfb05e;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.question-area {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #bfb05e; /* Adjust the values to control the shadow */
+
+}
+
+.upload-document {
+    display: flex;
+    align-items: center;
+}
+
+.upload-document #submit-question-btn {
+    margin-left: auto; /* Move the button to the right by setting the left margin to auto */
+    background-color: #000;
+    color: #d6ca85;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    float: right /* Add some margin to separate the buttons (if needed) */
+}
+
+.upload-document #submit-question-btn:hover {
+    background-color: #333; /* Darken the color on hover */
+}
+/* Add the following style to hide the initial state of the "Submit" button */
+#submit-question-btn {
+    display: none;
+    font-size: 16px; 
+    font-family: 'Playfair Display', serif;
+}
+
+
+.upload-document input {
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    color: black;
+}
+
+
+.upload-label {
+    background-color: #000;
+    color: #d6ca85;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ask-question {
+    display: flex;
+    flex-direction: column;
+}
+
+.ask-question textarea {
+    width: calc(100% - 20px);
+    height: 240px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.ask-question button {
+    background-color: #000;
+    color: #d6ca85;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    align-self: flex-end;
+    border: none;
+
+}
